@@ -377,13 +377,14 @@ header .desktop a:hover{
     height: 44px;
     background: #2693FF;
     line-height: 44px;
-    margin-top: 18px;
     border: 0;
     border-radius: 20px;
     cursor: pointer;
     color: white;
     font-size: 17px;
     font-weight: lighter;
+    margin: 25px auto 0px auto;
+    display: block;
 }
 
 .contato form input[type="submit"]:focus{
@@ -526,11 +527,6 @@ footer h2{
 
     .contato{
         width: 100%;
-    }
-
-    .contato form input[type="submit"]{
-      margin: 25px auto 0px auto;
-      display: block;
     }
     
     /* equipe */
