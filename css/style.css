@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+
+
+html, body{
+    height: 100%;
+}
+
+/* 
+    classes auxiliares
+*/
+
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+
+/* 
+    main
+*/
+
+main.bg{
+    width: 100%;
+    min-height: 800px;
+    padding: 15px;
+    background-image: url('../img/bg1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* 
+    socialMedia
+*/
+
+.socialMedia{
+    text-align: right;
+}
+
+.socialMedia a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight: 300;
+    margin-left: 30px;
+}
+/* 
+    header
+*/
+
+header{
+    padding: 15px 0;
+    color: white;
+    border-bottom: 2px solid #CCC;
+}
+
+
+
+header .hFlex{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+header .logo{
+    font-size: 25px;
+}
+
+/* nav moibile */
+
+header .mobile{
+    display: none;
+}
+
+header .mobile ul{
+    display: none;
+	z-index: 2;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	top: 120px;
+	background: white;
+	list-style-type: none;
+}
+
+nav.mobile li{
+	font-weight: lighter;
+	border-bottom: 1px solid #444;
+	text-align: center;
+	padding:8px 0;
+}
+
+nav.mobile a{
+	display: block;
+	text-decoration: none;
+	color: #444;
+}
+
+header .mobile > i{
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: 100;
+    margin-right: 20px;
+}
+
+/*  */
+
+header nav ul{
+    list-style-type: none;
+}
+
+
+
+header .desktop{
+    margin-top: 10px;
+}
+
+header .desktop li{
+    display: inline-block;
+    margin-left: 35px;
+}
+
+header .desktop a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+header .desktop a:hover{
+    border-bottom: 2px solid rgb(233, 233, 233);
+}
+
+
+/* 
+    boxText
+*/
+
+.boxText{
+    margin: 110px 0;
+    max-width: 770px;
+    color: white;
+}
+
+.boxText h2{
+    font-weight: lighter;
+	font-size: 44px;
+}
+
+.boxText span{
+    color: #2692FF;
+}
+
+.boxText p{
+    margin-top: 18px;
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.boxText a{
+    width: 177px;
+    height: 44px;
+    background: #2693FF;
+    text-align: center;
+    line-height: 44px;
+    margin-top: 18px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 20px;
+
+    display: block;
+
+    font-size: 17px;
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+}
+
+
+.boxText a:focus{
+    outline: 0;
+    background: #2281e0;
+    font-size: 18px;
+}
+
+/* section plano .box1 */
+
+.boxPlano{
+    width: 100%;
+    padding: 27px 0;
+    text-align: center;
+    background: rgb(220,220,220);
+}
+
+.boxPlano h2{
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 25px;
+    color: #2692FF;
+    font-weight: 300;
+    border-top: 2px solid #2692FF;
+}
+
+/* section plano modelos */
+
+.planoModel{
+    margin-top: 25px;
+}
+
+.planoModel > .center{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.planoSingle{
+    width: 33.3%;
+    padding: 0 40px;
+}
+
+.planoWrapper{
+    width: 100%;
+    -webkit-box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+    border: 1px solid #ccc;
+    min-height: 300px;
+}
+
+.planoWrapper h2{
+    background: #2692FF;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    font-weight: lighter;
+}
+
+.planoWrapper .planoContent{
+    padding: 8px 0 15px 0;
+}
+
+.planoWrapper .planoContent p {
+    margin-left: 20px;
+    color: #777777;
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+.preco{
+    margin-top: 10px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.preco h2 {
+    font-size: 24px;
+    color: #777;
+    padding: 0 20px;
+    background-color: transparent;
+    display: inline-block;
+    border-top: 1px solid #ccc;
+}
+
+/* section paralax */
+
+.paralax{
+    margin-top: 50px;
+    width: 100%;
+    padding: 40px 0;
+    min-height: 300px;
+    background-image: url(../img/bg_parallax.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.paralax > .center{
+    max-width: 960px;
+}
+
+.paralax h2{
+    color: white;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+}
+
+.paralax span{
+    color: #2692FF;
+}
+
+.paralax p{
+    font-weight: 100;
+    text-align: justify;
+    margin-top: 15px;
+    color: white;
+}
+
+/* final */
+
+.final{
+    margin: 30px 0;
+}
+
+.final > .center{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* contato */
+
+.contato{
+    margin: 30px 0;
+    padding: 0 20px;
+    width: 50%;
+}
+
+.contato h2{
+    font-weight: lighter;
+    color: #777777;
+    font-size: 24px;
+}
+
+.contato span{
+    color: #2692FF;
+}
+
+.contato h2 > .efeito{
+    width: 50px;
+    height: 2px;
+    background: #777;
+    transition: 0.4s;
+}
+
+.contato h2:hover > .efeito{
+    width: 100px;
+}
+
+.contato form input[type="name"],
+.contato form input[type="email"]{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    display: block;
+    padding-left: 8px;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.contato form textarea{
+    width: 100%;
+    min-height: 100px;
+    height: 100px;
+    max-height: 200px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    display: block;
+    padding: 3px 3px 3px 7px;
+    margin-top: 10px;
+    border-radius: 2px;
+    resize: vertical;
+}
+
+.contato form input[type="submit"]{
+    width: 145px;
+    height: 44px;
+    background: #2693FF;
+    line-height: 44px;
+    margin-top: 18px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+.contato form input[type="submit"]:focus{
+    outline: 0;
+    background: #2281e0;
+    font-size: 19px;
+}
+
+/* equipe */
+
+.equipe{
+    margin: 30px 0;
+    padding: 0 20px;
+    width: 50%;
+}
+
+.equipe h2{
+    font-weight: lighter;
+    color: #777777;
+    font-size: 24px;
+}
+
+.equipe span{
+    color: #2692FF;
+}
+
+.equipe h2 > .efeito2{
+    height: 2px;
+    width: 60px;
+    background: #777;
+    transition: 0.6s;
+}
+
+.equipe h2:hover > .efeito2{
+    width: 164px;
+}
+
+/* parte flex de equipe */
+
+.equipeFlex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.equipeFlex .equipeSingle{
+    width: 48%;
+    margin: 15px 1%;
+    padding: 10px 8px;
+    min-height: 240px;
+    border: 1px solid #CCc;
+
+    -webkit-box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+    box-shadow: 10px 9px 5px -8px rgba(0,0,0,0.75);
+}
+
+.topoBox{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.boxAvatar{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.boxAvatar img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.infoUser{
+    display: inline-block;
+    color: #777;
+    
+    padding-left: 8px;
+    vertical-align: middle;
+}
+.infoUser p:first-of-type{
+    font-weight: bold;
+}
+
+.infoUser p:last-of-type{
+    font-style: italic;
+}
+
+.description{
+    color: #999999;
+    font-weight: lighter;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* footer */
+
+footer{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer h2{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+/* Responsivo */
+
+@media screen and (max-width:750px){
+    header .hFlex{
+        margin-top: 20px;
+    }
+    header .desktop{
+        display: none;
+    }
+
+    header .mobile{
+        display: block;
+    }
+
+    header .mobile ul{
+        display: none;
+    }
+    /* planos */
+    .planoSingle:first-of-type{
+        margin-top: 0;
+    }
+
+    .planoSingle{
+        width: 100%;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    /* contato */
+
+    .contato{
+        width: 100%;
+    }
+
+    .contato form input[type="submit"]{
+      margin: 25px auto 0px auto;
+      display: block;
+    }
+    
+    /* equipe */
+
+    .equipe{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:540px){
+    .equipeFlex .equipeSingle{
+        width: 100%;
+    }
+}
