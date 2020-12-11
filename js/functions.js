@@ -13,7 +13,7 @@ $(function(){
 
         $('html,body').animate({'scrollTop':offSetTop},1000);
 
-        return false
+        return false;
     })
 
     
